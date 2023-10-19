@@ -8,14 +8,15 @@ body{
 
 header{
     display: flex;
-    background-color: black;
+    background-color: #f0f0f0;
     justify-content: center;
     color: white;
-    padding: 20px;
+    padding: 10px;
 }
 
 ul{
     margin: 0;
+    padding-left: 10px; /* para compensar a margem à direita do <li> */
     list-style-type: none;
 }
 
@@ -25,11 +26,12 @@ li{
 }
 
 a{
+    transition: transform 200ms ease;
     text-decoration: none;
 }
 
 a:hover{
-    /*transform: translateY(-5px);*/
+    transform: translateY(-5px); /* por que não funciona no header? */
     text-decoration: underline;
 }
 
@@ -40,9 +42,8 @@ main{
 
 footer{
     display: flex;
-    background-color: black;
+    background-color: gainsboro;
     justify-content: center;
-    color: white;
     margin-top: auto;
     padding: 10px;
 }

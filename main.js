@@ -1,7 +1,7 @@
 const link = document.querySelector('.credito');
 let intervalo;
-const textoOriginal = 'Yumiowari';
-let indice = 0;
+const textoOriginal = link.innerText;
+let indice = textoOriginal.length;
 
 link.addEventListener('mouseover', iniciaAnimacao);
 link.addEventListener('mouseout', terminaAnimacao);
@@ -11,13 +11,13 @@ function iniciaAnimacao(){
 };
 
 function animarTexto(){
-    if(indice === textoOriginal.length)indice = 0;
+    if(indice === 0)indice = textoOriginal.length;
 
-    const novoTexto = textoOriginal.substring(indice) + textoOriginal.substring(0, indice);
+    const novoTexto = textoOriginal.substring(indice, textoOriginal.length) + textoOriginal.substring(0, indice);
 
     link.innerText = novoTexto;
 
-    indice++;
+    indice--;
 };
 
 function terminaAnimacao(){
