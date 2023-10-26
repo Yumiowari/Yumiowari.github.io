@@ -20,9 +20,18 @@ ul{
     list-style-type: none;
 }
 
+ul{
+    display: flex;
+}
+
 li{
-    display: inline;
+    transition: transform 200ms ease;
     margin-right: 10px;
+}
+
+li:hover{
+    transform: translateY(5px); /* Para funcionar no header também! */
+    text-decoration: underline;
 }
 
 a{
@@ -31,7 +40,7 @@ a{
 }
 
 a:hover{
-    transform: translateY(-5px); /* por que não funciona no header? */
+    transform: translateY(-5px);
     text-decoration: underline;
 }
 
