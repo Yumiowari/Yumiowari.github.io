@@ -30,7 +30,7 @@ li{
 }
 
 li:hover{
-    transform: translateY(5px); /* Para funcionar no header também! */
+    transform: translateY(3px); /* Para funcionar no header também! */
     text-decoration: underline;
 }
 
@@ -40,7 +40,7 @@ a{
 }
 
 a:hover{
-    transform: translateY(-5px);
+    transform: translateY(-3px);
     text-decoration: underline;
 }
 
