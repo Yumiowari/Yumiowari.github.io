@@ -1,12 +1,11 @@
 body{
     margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100vh; /*100% da janela do navegador, uma vez que <body> não tem elemento pai*/
 }
 
-header{
+header, footer{
     display: flex;
     background-color: #f0f0f0;
     justify-content: center;
@@ -50,11 +49,7 @@ main{
 }
 
 footer{
-    display: flex;
-    background-color: gainsboro;
-    justify-content: center;
     margin-top: auto;
-    padding: 10px;
 }
 
 .amor{
