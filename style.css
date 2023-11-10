@@ -1,15 +1,18 @@
+/*https://paletadecores.com/paleta/edebe6/d6e1c7/94c7b6/403b33/d3643b/*/
+
 body{
     margin: 0;
     display: flex;
+    background-color: #edebe6;
     flex-direction: column;
     min-height: 100vh; /*100% da janela do navegador, uma vez que <body> não tem elemento pai*/
 }
 
 header, footer{
     display: flex;
-    background-color: #f0f0f0;
+    background-color: #94c7b6;
     justify-content: center;
-    color: white;
+    color: #403b33;
     padding: 10px;
 }
 
@@ -54,7 +57,7 @@ footer{
 
 .amor{
     display: inline;
-    color: red;
+    color: #d3643b;
     margin: 0 5px;
 }
 
